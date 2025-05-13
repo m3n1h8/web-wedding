@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/chung.css"/>
+    <link rel="stylesheet" href="../css/trangchu.css"/>
+    <title>Trang chủ</title>
+</head>
+<body>
+    <div class="container">
+        
+         <div class="header">
+             <p class="trang"><a href="trangchu.html" class="trangchu">trang chủ</a></p>
+             <p class="trang"><a href="doihinh.html" class="doihinh">đội hình </a></p>
+             <p class="trang"><a href="datlich.html" class="datlich">đặt lịch</a></p>
+             <p class="trang"><a href="trogiup.html" class="trogiup">trợ giúp</a></p>
+
+        </div>
+
+        <h1>Trang chủ</h1>
+        <p>Chào mừng bạn đến với trang chủ của chúng tôi!</p>
+
+
+        
+        <div class="body">
+            <div class="slidebar">
+                <button>giới thiệu</button>
+                <button>ảnh</button>
+                <button>đánh giá của khách hàng</button>
+            </div>
+            <div class="content">
+                <img src="../images/ảnh cưới tông hồng.jpg" alt="" class="img1">
+                <img src="../images/ảnh cưới tông hồng 2.jpg" alt="" class="img2">
+                <img src="../images/ảnh cưới tông hồng 3.webp" alt=""  class="img3">
+                
+                <img src="" id="imga">
+                <img src="" id="imgb">
+                <p>.....</p>
+                <p><button onclick="xemthem()" class="showing">xem thêm</button></p>
+                
+            </div>
+            
+
+        </div>
+        <div class="footer">
+            
+            <ul>
+                <li>Địa chỉ trụ sở: Tân An, Thanh Hà, Hải Dương</li>
+                <li>Điện thoại: 0327255938</li>
+                <li> Email: tmcl@gmail.com</li>
+                <li>Liên hệ: 
+                    <ul>
+                        <li>Fabook</li>
+                        <li>Tiktok </li>
+                        <li>Instagram</li>
+                    </ul>
+                </li>
+                <li>Bản quyền thuộc về tcml.com</li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+         const xemthem=function xemthem() {
+            const imga=document.getElementById("imga");
+            const imgb=document.getElementById("imgb");
+            const button=document.querySelector(".showing");
+            
+            
+            imga.src="../images/ảnh cưới tông hồng 4.jpg";
+            imgb.src="../images/ảnh cưới tông hồng 5.jpg";
+            button.innerHTML='thu gọn';
+            button.onclick=function thugon(){
+                imga.src="";
+                imgb.src="";
+                button.innerHTML='xem thêm';
+                button.onclick=xemthem;
+                
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>
