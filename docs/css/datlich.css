@@ -1,0 +1,46 @@
+.bodyinside{
+    border: solid 1px ;
+    margin: 5% 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 7px 1px rgb(199, 194, 194);
+    width: 85%;
+}
+
+    
+
+.item{
+   
+    width: 60%;
+    
+}
+h2{
+    margin-top: 5%;
+   text-align: center;
+    font-size: 35px;
+}
+button{
+    width: 70%;
+    margin:5% 25%;
+    border-radius: 9px;
+    border: solid 1px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(214, 105, 122);
+    color: whitesmoke;
+} 
+button:hover{
+    background-color:rgb(246, 242, 237); 
+    border: solid 1px rgb(214, 105, 122);
+    color: rgb(214, 105, 122);
+}
+@media (min-width: 800px ){
+    .bodyinside{
+        width: 45%;
+        
+    }
+}
+    

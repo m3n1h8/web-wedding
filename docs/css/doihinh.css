@@ -1,0 +1,51 @@
+
+.bodyinside{
+    margin: 30px 0 30px 0;
+}
+
+.item{
+    
+    border-bottom: solid 1px rgb(214, 105, 122);
+    border-radius: 2px;
+    padding: 2%;
+    margin-bottom: 8px;
+    box-shadow: 0 2px rgb(214, 105, 122);
+    
+
+}
+.boy{
+    
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.boyimg{
+    
+    margin: 5% 0;
+    display: flex;
+   
+    justify-content: space-around;
+
+}
+
+.girlimg{
+    
+    margin: 5% 0;
+    display: flex;
+   
+    justify-content: space-around;}
+
+
+img{
+    width: 45%;
+    box-shadow: 2px 2px 4px 2px rgb(185, 177, 177);
+    border-radius: 10px;
+}
+
+
+    
+
+
+
+

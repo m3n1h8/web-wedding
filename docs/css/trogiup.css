@@ -1,0 +1,27 @@
+.bodyinside{
+    
+    margin-bottom: 190px;
+    width: 600PX;
+    
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+summary,details p{
+    font-size: 20px;
+    margin: 9px;
+}
+a{
+    color:rgb(219, 75, 96);
+}
+
+@media(max-width:600px){
+    .bodyinside{
+        width:470px;
+        margin-bottom: 170px;
+    }
+    h1{
+    font-size: 30px;
+}
+}

@@ -3,20 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Đặt lịch</title>
     <link rel="stylesheet" href="css/chung.css"/>
     <link rel="stylesheet" href="css/datlich.css"/>
 </head>
 <body>
     <div class="container">
-        <div class="header">
+         <div class="header">
+            <span class="logo">Logo</span>
+            <span class="cactrang">
              <p class="trang"><a href="index.html" class="trangchu">trang chủ</a></p>
              <p class="trang"><a href="doihinh.html" class="doihinh">đội hình </a></p>
-             <p class="trang"><a href="datlich.html" class="datlich">đặt lịch</a></p>
+             <p class="trang trangbold"><a href="datlich.html" class="datlich bold">đặt lịch</a></p>
              <p class="trang"><a href="trogiup.html" class="trogiup">trợ giúp</a></p>
+            </span>
 
         </div>
+       
+        <div class="body">
+            <div class="bodyinside">
+                 <h2>Đăng kí tại đây</h2><br>
+                 <p class="item">Họ tên:
+                 <input placeholder="nhập tên của bạn" type="text" id ="name"></p><br>
+
+                 <p class="item">Tuổi:
+                 <input placeholder="nhập tuổi " type="number" id ="age"></P><br>
+
+                 <p class="item">Email:
+                 <input placeholder="nhập email của bạn" type="email" id ="email"></p><br>
+
+                 <p class="item">Số điện thoại:
+                 <input placeholder="nhập số của bạn" type="phonenumber" id ="phonenumber"></p><br>
+
+                 
+
+                 <p class="item">Hiện tại bạn đang là ?<br>
+                 <input type="radio" id="student" name="status" value="student">
+                 <label for="student">Sinh viên</label><br>
+                 <input type="radio" id="employee" name="status" value="employee">
+                 <label for="employee">nhân viên</label></p><br>
+
+                 <p class="item">bạn sẽ giới thiệu chúng tôi với ai chứ ?<br> 
+                 <input type="radio" value="friend" ><label for="friend">bạn</label><br>
+                 <input type="radio" value="family"><label for="family">gia đình</label><br>
+                 <input type="radio" value="colleague"><label for="colleague">đồng nghiệp</label></p><br>
+
+                 <p class="item">Ngôn ngữ lập trình và framework mà bạn đã biết<br>
+                 <input type="checkbox" value="html"><label for ="html">HTML</label> 
+                 <input type="checkbox" value="css"><label for ="css">CSS</label>
+                 <input type="checkbox" value="python"><label for ="python">PYTHON</label></p><BR>
+
+                 <p class="item">Bạn có câu hỏi gì cho chúng tôi?<br>
+                 <input  placeholder="nhập câu hỏi của bạn" id="question"></input></p><br>
+
+                 <button>Gửi</button>
+            </div>
+        </div>
+
     </div>
+    <script>
+        
+    </script>
+
+
    
     
 </body>
