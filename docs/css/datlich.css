@@ -25,7 +25,20 @@ h2{
 }
 .bodyinside p{
     font-size: 20px;
+
 } 
+#friend{
+    position: relative;
+    left: -29px;
+}
+#colleague{
+    position: relative;
+    
+}
+#family{
+    position: relative;
+    left: -12px;
+}
 button{
     width: 70%;
     margin:5% 25%;

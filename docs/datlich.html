@@ -51,16 +51,13 @@
                  <label for="employee">nhân viên</label></p><br>
 
 
-                 <p class="item">bạn sẽ giới thiệu chúng tôi với ai chứ ?<br> 
-                 <input type="radio" value="friend" ><label for="friend">bạn</label><br>
-                 <input type="radio" value="family"><label for="family">gia đình</label><br>
-                 <input type="radio" value="colleague"><label for="colleague">đồng nghiệp</label></p><br>
+                 <p class="item"> Từ đâu mà bạn biết tới chúng tôi ?<br> 
+                 <input type="radio" value="friend" id ="friend" ><label for="friend">bạn</label><br>
+                 <input type="radio" value="family"id="family"><label for="family">gia đình</label><br>
+                 <input type="radio" value="colleague" id="colleague"><label for="colleague">đồng nghiệp</label></p><br>
+                 
 
-                 <p class="item">Ngôn ngữ lập trình và framework mà bạn đã biết<br>
-                 <input type="checkbox" value="html"><label for ="html">HTML</label> 
-                 <input type="checkbox" value="css"><label for ="css">CSS</label>
-                 <input type="checkbox" value="python"><label for ="python">PYTHON</label></p><BR>
-
+            
                  <p class="item">Bạn có câu hỏi gì cho chúng tôi?<br>
                  <input  placeholder="nhập câu hỏi của bạn" id="question"></input></p><br>
 
@@ -81,7 +78,7 @@ var email= document.querySelector("#email").value;
  var question= document.querySelector("#question").value;
  var check= document.querySelectorAll("input[type=checkbox]:checked");
 
-            if (name ==""  ){
+            if (name ==""||(name !==""&&email==""&&phonenumber=="") ){
                 alert("Vui lòng nhập đầy đủ thông tin");
                 return;
             }
