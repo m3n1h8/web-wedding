@@ -21,8 +21,12 @@
         </div>
        
         <div class="body">
+            <div class="afterSend"></div>
+
+
             <div class="bodyinside">
                  <h2>Đăng kí tại đây</h2><br>
+
                  <p class="item">Họ tên:
                  <input placeholder="nhập tên của bạn" type="text" id ="name"></p><br>
 
@@ -38,10 +42,12 @@
                  
 
                  <p class="item">Hiện tại bạn đang là ?<br>
+
                  <input type="radio" id="student" name="status" value="student">
                  <label for="student">Sinh viên</label><br>
                  <input type="radio" id="employee" name="status" value="employee">
                  <label for="employee">nhân viên</label></p><br>
+
 
                  <p class="item">bạn sẽ giới thiệu chúng tôi với ai chứ ?<br> 
                  <input type="radio" value="friend" ><label for="friend">bạn</label><br>
@@ -56,12 +62,41 @@
                  <p class="item">Bạn có câu hỏi gì cho chúng tôi?<br>
                  <input  placeholder="nhập câu hỏi của bạn" id="question"></input></p><br>
 
-                 <button>Gửi</button>
+                 <button onclick="send()">Gửi</button>
             </div>
         </div>
 
     </div>
     <script>
+        email
+        function send() {
+            var name= document.querySelector("#name").value;
+ var age= document.querySelector("#age").value;
+var email= document.querySelector("#email").value;  
+ var phonenumber= document.querySelector("#phonenumber").value;
+// var status= document.querySelector("input[name=status]:checked").value;
+//dòng này làm function không chạy được
+ var question= document.querySelector("#question").value;
+ var check= document.querySelectorAll("input[type=checkbox]:checked");
+ 
+
+          
+          
+
+            if (name ==""  ){
+                alert("Vui lòng nhập đầy đủ thông tin");
+                return;
+            }
+            else {
+            var bodyinside= document.querySelector("div.bodyinside");
+            bodyinside.style.display="none";
+            var afterSend= document.querySelector("div.afterSend");
+
+            afterSend.setAttribute("class","afterSend2");
+            afterSend.innerHTML="<h2>Cảm ơn bạn đã gửi thông tin cho chúng tôi</h2><br><p>Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất</p>";}
+
+        }
+        
         
     </script>
 

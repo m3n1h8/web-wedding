@@ -1,5 +1,4 @@
-.bodyinside{
-    border: solid 1px ;
+.bodyinside{border: solid 1px ;
     margin: 5% 0;
     border-radius: 20px;
     display: flex;
@@ -8,6 +7,7 @@
     align-items: center;
     box-shadow: 3px 3px 7px 1px rgb(199, 194, 194);
     width: 85%;
+    
 }
 
     
@@ -18,10 +18,14 @@
     
 }
 h2{
+    
     margin-top: 5%;
    text-align: center;
     font-size: 35px;
 }
+.bodyinside p{
+    font-size: 20px;
+} 
 button{
     width: 70%;
     margin:5% 25%;
@@ -43,4 +47,14 @@ button:hover{
         
     }
 }
+.afterSend{
+    display: none;
+    
+}
+.afterSend2{ 
+    font-size: 20px;
+    margin: 2%;
+
+}
+
     

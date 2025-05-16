@@ -1,11 +1,12 @@
 .bodyinside{
     
     margin-bottom: 190px;
-    width: 600PX;
+    width: 75%;
+    
     
 }
 h1{
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 40px;
 }
 summary,details p{
@@ -17,11 +18,7 @@ a{
 }
 
 @media(max-width:600px){
-    .bodyinside{
-        width:470px;
-        margin-bottom: 170px;
-    }
+    
     h1{
-    font-size: 30px;
-}
-}
+    font-size: 27px;
+}}

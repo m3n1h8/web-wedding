@@ -111,6 +111,29 @@ button:hover{
     margin-left:  45px;}
 
 }
+.contact{
+    position: fixed;
+    bottom:30px;
+    right: 17px;
+    display: flex;
+    flex-direction: column;
+    
+}
+ion-icon{
+    font-size: 30px;
+    margin: 10px;
+    color: rgb(226, 226, 228);
+    border: solid 1px;
+    background-color: rgb(211, 83, 102);
+    padding: 4px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 4px rgb(134, 133, 133);
+}
+
+ion-icon:hover{
+    background-color: rgb(246, 242, 237);
+    color: rgb(211, 83, 102);
+}
 
 
 
