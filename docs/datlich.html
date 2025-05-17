@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/chung.css"/>
     <link rel="stylesheet" href="css/datlich.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -26,7 +27,7 @@
             <div class="afterSend"></div>
 
 
-            <div class="bodyinside">
+            <div class="bodyinside" data-aos="zoom-in-up">
                  <h2>Đăng kí tại đây</h2><br>
 
                  <p class="item">Họ tên:
@@ -94,7 +95,10 @@ var email= document.querySelector("#email").value;
         
         
     </script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
    
     

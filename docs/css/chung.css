@@ -43,7 +43,7 @@ body{
 }
 
 .trang,.datlich,.doihinh,.trangchu,.trogiup{
-   /* background-color:rgb(238, 199, 155);*/ 
+   
     padding: 3px;
     border-radius: 4px;
     margin-left: 5px;margin-right: 5px;
@@ -112,7 +112,9 @@ button:hover{
 
 }
 .contact{
+
     position: fixed;
+    /* để nó gắn vào góc màn hinhf   */
     bottom:30px;
     right: 17px;
     display: flex;

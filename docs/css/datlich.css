@@ -31,13 +31,15 @@ h2{
     position: relative;
     left: -29px;
 }
-#colleague{
-    position: relative;
-    
-}
 #family{
     position: relative;
     left: -12px;
+}
+#colleague{
+    position: relative;
+    
+
+
 }
 button{
     width: 70%;

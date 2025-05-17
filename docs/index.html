@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/chung.css"/>
     <link rel="stylesheet" href="css/trangchu.css"/>
+    <!--tích hợp form chữ dacing script-->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!--tích hợp AOS cuộn trang-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Trang chủ</title>
 </head>
@@ -35,9 +38,9 @@
                     <button>đánh giá của khách hàng</button>
                 </div>
                 <div class="content">
-                    <img src="images/ảnh cưới tông hồng.jpg" alt="" class="img1">
-                    <img src="images/ảnh cưới tông hồng 2.jpg" alt="" class="img2">
-                    <img src="images/ảnh cưới tông hồng 3.webp" alt=""  class="img3">
+                    <img src="images/ảnh cưới tông hồng.jpg" alt="" class="img1" data-aos="fade-left">
+                    <img src="images/ảnh cưới tông hồng 2.jpg" alt="" class="img2" data-aos="fade-left">
+                    <img src="images/ảnh cưới tông hồng 3.webp" alt=""  class="img3" data-aos="fade-left">
                     
                     <img src="" id="imga">
                     <img src="" id="imgb">
@@ -66,7 +69,7 @@
 
         </div>
     </div>
-
+<!--các nút liên hệ-->
 <div class="contact">
 <a href="https://facebook.com/groups/479337043404880/"><ion-icon name="logo-facebook" id="fb"></ion-icon></a>
 <a href="sms:0327255938?body=Chào ban, tôi muốn hỏi về dịch vụ bê lễ của bạn"><ion-icon name="mail-outline" class="mail"></ion-icon></a>
@@ -75,12 +78,12 @@
 
 
     <script>
+        // function nút xem thêm ảnh
          const xemthem=function xemthem() {
             const imga=document.getElementById("imga");
             const imgb=document.getElementById("imgb");
             const button=document.querySelector(".showing");
-            
-            
+        
             imga.src="images/ảnh cưới tông hồng 4.jpg";
             imgb.src="images/ảnh cưới tông hồng 5.jpg";
             button.innerHTML='thu gọn';
@@ -95,9 +98,13 @@
         }
 
     </script>
+    <!-- tích hợp ionicon -->
     <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
 <script  nomodule  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
-
-    
+<!--tích hợp AOS cuộn trang-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
 </body></html>
 
